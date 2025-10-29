@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expert HP Printer Setup Services | USA Nationwide Support</title>
+    <meta name="description"
+        content="Professional HP printer setup, free driver downloads, and expert USA support. Get printing in minutes with our certified technicians.">
+    <meta name="keywords" content="HP printer setup, HP drivers, printer installation, USA support, HP troubleshooting">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                        accent: '#fbbf24',
+                        success: '#10b981',
+                        danger: '#ef4444',
+                        hpblue: '#0096D6',
+                        hpgray: '#f8fafc',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.6s ease-in-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'bounce-slow': 'bounce 3s infinite',
+                        'pulse-slow': 'pulse 3s infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(40px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Inter Font (Google Fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(30, 64, 175, 0.95), rgba(59, 130, 246, 0.9)),
+                radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3), transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1), transparent 50%),
+                linear-gradient(45deg, #1e40af 0%, #3b82f6 50%, #6366f1 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="1" fill="white" opacity="0.1"/><circle cx="10" cy="90" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .gradient-text {
+            background: linear-gradient(45deg, #fbbf24, #f59e0b, #fb923c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .floating-element {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .element-1 {
+            width: 120px;
+            height: 120px;
+            top: 10%;
+            left: 5%;
+            animation-delay: 0s;
+        }
+
+        .element-2 {
+            width: 80px;
+            height: 80px;
+            top: 70%;
+            right: 10%;
+            animation-delay: 2s;
+        }
+
+        .element-3 {
+            width: 100px;
+            height: 100px;
+            bottom: 20%;
+            left: 15%;
+            animation-delay: 4s;
+        }
+
+        .scroll-indicator {
+            animation: bounce 2s infinite;
+        }
+
+        .service-badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: linear-gradient(45deg, #ef4444, #dc2626);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            transform: rotate(15deg);
+        }
+
+        .testimonial-card {
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-size: 4rem;
+            color: #3b82f6;
+            font-family: serif;
+            line-height: 1;
+            opacity: 0.3;
+        }
+
+        .chat-pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @media (max-width: 768px) {
+            .hero-bg::before {
+                opacity: 0.2;
+            }
+        }
+    </style>
+</head>
+
+<body class="font-sans text-gray-800 bg-white antialiased">
+
+    <!-- Enhanced Sticky Header -->
+    <header class="fixed top-0 w-full bg-white/95 backdrop-blur-lg shadow-lg z-50 transition-all duration-300"
+        id="header">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div
+                    class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2" />
+                        <circle cx="6" cy="14" r="1" />
+                        <path d="M6 18v4h12v-4" />
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold text-gray-900">Expert HP Setup</h1>
+                    <p class="text-xs text-gray-500 font-medium">🇺🇸 USA Nationwide Support</p>
+                </div>
+            </div>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex space-x-8 items-center">
+                <a href="#home"
+                    class="text-gray-700 hover:text-primary font-medium transition-colors duration-200 relative group">
+                    Home
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
+                </a>
+                <a href="#services"
+                    class="text-gray-700 hover:text-primary font-medium transition-colors duration-200 relative group">
+                    Services
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
+                </a>
+                <a href="#downloads"
+                    class="text-gray-700 hover:text-primary font-medium transition-colors duration-200 relative group">
+                    Free Tools
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
+                </a>
+                <a href="#testimonials"
+                    class="text-gray-700 hover:text-primary font-medium transition-colors duration-200 relative group">
+                    Reviews
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
+                </a>
+                <a href="#contact"
+                    class="text-gray-700 hover:text-primary font-medium transition-colors duration-200 relative group">
+                    Contact
+                    <span
+                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
+                </a>
+                <a href="tel:18005551234"
+                    class="bg-gradient-to-r from-primary to-secondary text-white px-6 py-2.5 rounded-xl font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200 flex items-center space-x-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    <span>Call Now</span>
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Enhanced Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white/95 backdrop-blur-lg border-t border-gray-200">
+            <div class="px-4 py-2 space-y-1">
+                <a href="#home"
+                    class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Home</a>
+                <a href="#services"
+                    class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Services</a>
+                <a href="#downloads"
+                    class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Free Tools</a>
+                <a href="#testimonials"
+                    class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Reviews</a>
+                <a href="#contact"
+                    class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Contact</a>
+                <a href="tel:18005551234"
+                    class="block mx-4 my-3 px-4 py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-lg text-center">Call
+                    Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Enhanced Hero Section -->
+    <section id="home" class="hero-bg text-white pt-24 pb-20 md:pb-32 relative">
+        <!-- Floating Background Elements -->
+        <div class="floating-element element-1"></div>
+        <div class="floating-element element-2"></div>
+        <div class="floating-element element-3"></div>
+
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <!-- Hero Badge -->
+            <div class="inline-flex items-center space-x-2 glass-card px-6 py-3 rounded-full mb-8 animate-fade-in">
+                <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center">
+                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                </div>
+                <span class="text-sm font-semibold">🇺🇸 Serving 10,000+ USA Customers | Certified HP Partners</span>
+            </div>
+
+            <!-- Enhanced Hero Title -->
+            <h1 class="text-4xl md:text-7xl font-black mb-6 leading-tight animate-slide-up">
+                <span class="block">Expert HP Printer Setup</span>
+                <span class="block text-3xl md:text-5xl font-bold text-gray-200">Services Across the USA</span>
+                <span class="block text-2xl md:text-4xl gradient-text font-extrabold mt-2">Get Printing in
+                    Minutes!</span>
+            </h1>
+
+            <!-- Enhanced Subtitle -->
+            <p class="text-lg md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed animate-fade-in opacity-90">
+                Struggling with HP printer installation? Our <strong>certified technicians</strong> provide instant
+                solutions with
+                <strong>free driver downloads</strong>, step-by-step setup wizards, and nationwide expert support.
+                <span class="text-accent font-semibold">No technical experience required.</span>
+            </p>
+
+            <!-- Stats Row -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-10 animate-fade-in">
+                <div class="glass-card p-4 rounded-xl">
+                    <div class="text-2xl md:text-3xl font-bold text-accent">10K+</div>
+                    <div class="text-sm text-gray-200">Happy Customers</div>
+                </div>
+                <div class="glass-card p-4 rounded-xl">
+                    <div class="text-2xl md:text-3xl font-bold text-accent">98%</div>
+                    <div class="text-sm text-gray-200">Success Rate</div>
+                </div>
+                <div class="glass-card p-4 rounded-xl">
+                    <div class="text-2xl md:text-3xl font-bold text-accent">24/7</div>
+                    <div class="text-sm text-gray-200">USA Support</div>
+                </div>
+                <div class="glass-card p-4 rounded-xl">
+                    <div class="text-2xl md:text-3xl font-bold text-accent">15min</div>
+                    <div class="text-sm text-gray-200">Avg Setup Time</div>
+                </div>
+            </div>
+
+            <!-- Enhanced CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-6 justify-center mb-12 animate-slide-up">
+                <a href="#downloads"
+                    class="group bg-gradient-to-r from-success to-green-600 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center relative overflow-hidden">
+                    <div
+                        class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300">
+                    </div>
+                    <svg class="w-6 h-6 mr-3 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    <div class="relative z-10">
+                        <div class="font-bold">Download Free Drivers</div>
+                        <div class="text-sm opacity-90">Official HP sources - Safe & secure</div>
+                    </div>
+                </a>
+                <a href="#wizard"
+                    class="group glass-card text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center border-2 border-white/30">
+                    <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                    <div>
+                        <div class="font-bold">Start Setup Wizard</div>
+                        <div class="text-sm opacity-90">Interactive step-by-step guide</div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Trust Indicators -->
+            <div
+                class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8 text-sm md:text-base animate-fade-in">
+                <div class="flex items-center space-x-2">
+                    <div class="flex space-x-1">
+                        <span class="text-accent text-lg">★★★★★</span>
+                    </div>
+                    <span class="text-gray-200">4.9/5 Stars from 2,500+ Reviews</span>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <span class="flex items-center text-gray-200">
+                        <svg class="w-4 h-4 mr-2 text-success" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        HP Certified Partners
+                    </span>
+                    <span class="flex items-center text-gray-200">
+                        <svg class="w-4 h-4 mr-2 text-success" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        SSL Secured
+                    </span>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="mt-16 scroll-indicator">
+                <svg class="w-8 h-8 mx-auto text-white opacity-70" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Problem-Solution Section -->
+    <section class="py-20 bg-gradient-to-br from-hpgray to-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Why HP Printer Setup Feels Like a
+                    Nightmare</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">We understand your frustration. Here's how we turn
+                    your printing problems into solutions.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <!-- Problems Column -->
+                <div class="space-y-6">
+                    <div class="text-center mb-8">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-red-100 rounded-full mb-4">
+                            <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.732-.833-2.464 0L4.35 16.5c-.77.833.192 2.5 1.732 2.5z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-red-600 mb-2">Common Problems</h3>
+                        <p class="text-gray-600">Issues that waste your time and cause frustration</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-red-500 card-hover">
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="flex-shrink-0 w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                                    <span class="text-red-600 font-bold text-lg">✗</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">Endless Error Messages</h4>
+                                    <p class="text-gray-600 text-sm">Cryptic "driver not found" errors during
+                                        installation</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-red-500 card-hover">
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="flex-shrink-0 w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                                    <span class="text-red-600 font-bold text-lg">✗</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">Wireless Connection Fails</h4>
+                                    <p class="text-gray-600 text-sm">Can't connect to Wi-Fi on Windows 11 or Mac systems
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-red-500 card-hover">
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="flex-shrink-0 w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                                    <span class="text-red-600 font-bold text-lg">✗</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">HP Smart App Crashes</h4>
+                                    <p class="text-gray-600 text-sm">Official HP software fails to work properly</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-red-500 card-hover">
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="flex-shrink-0 w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                                    <span class="text-red-600 font-bold text-lg">✗</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">Hours on Hold</h4>
+                                    <p class="text-gray-600 text-sm">Waiting forever for generic overseas support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Solutions Column -->
+                <div class="space-y-6">
+                    <div class="text-center mb-8">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
+                            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-green-600 mb-2">Our Expert Solutions</h3>
+                        <p class="text-gray-600">Professional fixes that actually work</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-green-500 card-hover">
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                                    <span class="text-green-600 font-bold text-lg">✓</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">Instant Free Driver Downloads</h4>
+                                    <p class="text-gray-600 text-sm">Official HP drivers from secure sources, guaranteed
+                                        compatibility</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-green-500 card-hover">
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                                    <span class="text-green-600 font-bold text-lg">✓</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">10-Minute Setup Wizard</h4>
+                                    <p class="text-gray-600 text-sm">Foolproof step-by-step process for any HP model</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-green-500 card-hover">
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                                    <span class="text-green-600 font-bold text-lg">✓</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">Expert USA Technicians</h4>
+                                    <p class="text-gray-600 text-sm">Remote assistance from certified HP specialists
+                                        nationwide</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-green-500 card-hover">
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                                    <span class="text-green-600 font-bold text-lg">✓</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-1">24/7 Live Chat Support</h4>
+                                    <p class="text-gray-600 text-sm">Instant help from USA-based team, no outsourcing
+                                        abroad</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-16">
+                <a href="#downloads"
+                    class="inline-flex items-center bg-gradient-to-r from-primary to-secondary text-white px-10 py-4 rounded-2xl font-bold text-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                    <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    Get Free Drivers Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Resources -->
+    <section id="downloads" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Start Free – No Credit Card Needed</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Download drivers or launch our wizard. 100%
+                safe from official HP sources.</p>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Driver Download Card -->
+                <div
+                    class="bg-gradient-to-br from-blue-50 to-hpgray p-8 rounded-2xl shadow-lg hover:shadow-xl transition text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Quick Download Free Drivers</h3>
+                    <p class="text-gray-600 mb-6"> OfficeJet, LaserJet, DeskJet. Windows & Mac.</p>
+                    <button onclick="trackDownload('drivers')"
+                        class="bg-green-500 text-white w-full py-3 rounded-lg font-bold hover:bg-green-600 transition">
+                        Download Now (Free)
+                    </button>
+                    <p class="text-xs text-gray-500 mt-3">Redirects to HP Official Site</p>
+                </div>
+
+                <!-- Setup Wizard Card -->
+                <div
+                    class="bg-gradient-to-br from-indigo-50 to-hpgray p-8 rounded-2xl shadow-lg hover:shadow-xl transition text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-hpblue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Start Printer Setup Wizard</h3>
+                    <p class="text-gray-600 mb-6">Enter model → Follow steps → Print in 10 mins.</p>
+                    <button onclick="launchWizard()"
+                        class="bg-hpblue text-white w-full py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+                        Launch Wizard
+                    </button>
+                    <p class="text-xs text-gray-500 mt-3">Works on any device</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-16 bg-hpgray">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Expert Setup Services – USA Wide</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                <!-- Service Cards -->
+                <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-7 h-7 text-hpblue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Basic Setup</h3>
+                    <p class="text-3xl font-bold text-hpblue mb-2">$49<span class="text-sm text-gray-500">.99</span></p>
+                    <p class="text-sm text-gray-600 mb-4">Driver + wireless connect</p>
+                    <a href="#contact"
+                        class="block bg-hpblue text-white py-2 rounded-lg text-sm font-semibold hover:bg-blue-700">Book
+                        Now</a>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-7 h-7 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h-4m-6 0H5" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Full Install</h3>
+                    <p class="text-3xl font-bold text-hpblue mb-2">$79<span class="text-sm text-gray-500">.99</span></p>
+                    <p class="text-sm text-gray-600 mb-4">Unbox + config + test</p>
+                    <a href="#contact"
+                        class="block bg-hpblue text-white py-2 rounded-lg text-sm font-semibold hover:bg-blue-700">Book
+                        Now</a>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
+                    <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-7 h-7 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Troubleshooting</h3>
+                    <p class="text-3xl font-bold text-hpblue mb-2">$99<span class="text-sm text-gray-500">.99</span></p>
+                    <p class="text-sm text-gray-600 mb-4">Fix errors fast</p>
+                    <a href="#contact"
+                        class="block bg-hpblue text-white py-2 rounded-lg text-sm font-semibold hover:bg-blue-700">Book
+                        Now</a>
+                </div>
+
+                <div
+                    class="bg-gradient-to-br from-hpblue to-blue-700 p-6 rounded-xl shadow hover:shadow-lg transition text-white text-center">
+                    <div
+                        class="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Premium Plan</h3>
+                    <p class="text-3xl font-bold mb-2">$149<span class="text-sm opacity-80">/year</span></p>
+                    <p class="text-sm mb-4">Unlimited support</p>
+                    <a href="#contact"
+                        class="block bg-white text-hpblue py-2 rounded-lg text-sm font-semibold hover:bg-gray-100">Get
+                        Premium</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Trusted by Thousands Across the USA</h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-hpgray p-6 rounded-xl">
+                    <div class="flex mb-3">
+                        <span class="text-yellow-500">★★★★★</span>
+                    </div>
+                    <p class="italic mb-4">"Downloaded drivers in 10 seconds, then the wizard connected my OfficeJet
+                        wirelessly. Saved my deadline!"</p>
+                    <p class="font-semibold">— Sarah T., Austin, TX</p>
+                </div>
+                <div class="bg-hpgray p-6 rounded-xl">
+                    <div class="flex mb-3">
+                        <span class="text-yellow-500">★★★★★</span>
+                    </div>
+                    <p class="italic mb-4">"Remote tech fixed my business LaserJet in 15 mins. Real USA support — no
+                        outsourcing!"</p>
+                    <p class="font-semibold">— Mike R., San Francisco, CA</p>
+                </div>
+                <div class="bg-hpgray p-6 rounded-xl">
+                    <div class="flex mb-3">
+                        <span class="text-yellow-500">★★★★★</span>
+                    </div>
+                    <p class="italic mb-4">"Free tools got me 90% there. Paid $49 to finish — worth every penny."</p>
+                    <p class="font-semibold">— Lisa K., New York, NY</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-16 bg-hpgray">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Get Same-Day Help</h2>
+            <p class="text-center text-gray-600 mb-12">Fill out the form or call <strong>1-800-555-1234</strong></p>
+
+            <form id="contact-form" class="bg-white p-8 rounded-2xl shadow-lg">
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <input type="text" placeholder="Full Name" required
+                        class="w-full p-4 border rounded-lg focus:outline-none focus:border-hpblue">
+                    <input type="email" placeholder="Email" required
+                        class="w-full p-4 border rounded-lg focus:outline-none focus:border-hpblue">
+                    <input type="tel" placeholder="Phone"
+                        class="w-full p-4 border rounded-lg focus:outline-none focus:border-hpblue">
+                    <input type="text" placeholder="HP Printer Model (e.g., OfficeJet 5255)"
+                        class="w-full p-4 border rounded-lg focus:outline-none focus:border-hpblue">
+                </div>
+                <textarea placeholder="Describe your issue (optional)" rows="4"
+                    class="w-full p-4 border rounded-lg mb-6 focus:outline-none focus:border-hpblue"></textarea>
+                <button type="submit"
+                    class="w-full bg-hpblue text-white py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition">
+                    Get Free Consultation
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">&copy; 2025 Expert HP Printer Setup Services. All rights reserved.</p>
+            <p class="text-sm text-gray-400">
+                <a href="#" class="hover:text-hpblue">Privacy Policy</a> |
+                <a href="#" class="hover:text-hpblue">Terms</a> |
+                <a href="#" class="hover:text-hpblue">FAQ</a>
+            </p>
+            <p class="mt-4 text-sm">Proudly serving the USA | <a href="tel:18005551234"
+                    class="underline">1-800-555-1234</a></p>
+        </div>
+    </footer>
+
+    <!-- Live Chat Bubble -->
+    <div id="chat-bubble"
+        class="fixed bottom-6 right-6 bg-hpblue text-white p-4 rounded-full shadow-lg cursor-pointer hover:bg-blue-700 transition z-40">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+        </svg>
+    </div>
+
+    <!-- Chat Widget (Hidden by Default) -->
+    <div id="chat-widget"
+        class="hidden fixed bottom-24 right-6 w-80 bg-white rounded-xl shadow-2xl overflow-hidden z-50">
+        <div class="bg-hpblue text-white p-4 font-semibold">Live Chat Support</div>
+        <div class="p-4 h-64 overflow-y-auto bg-hpgray">
+            <p class="text-sm text-gray-600">Hi! Need help with your HP printer?</p>
+        </div>
+        <input type="text" placeholder="Type a message..." class="w-full p-3 border-t focus:outline-none">
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+                if (mobileMenu.classList.contains('hidden') === false) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Header Shrink on Scroll
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('py-2');
+            } else {
+                header.classList.remove('py-2');
+            }
+        });
+
+        // Track Downloads
+        function trackDownload(type) {
+            alert(`Redirecting to official HP ${type} download page...`);
+            window.open('https://support.hp.com/us-en/drivers/printers', '_blank');
+        }
+
+        // Launch Wizard
+        function launchWizard() {
+            const model = prompt("Enter your HP printer model (e.g., OfficeJet Pro 9015):");
+            if (model) {
+                alert(`Launching setup wizard for: ${model}\nRedirecting to 123.hp.com...`);
+                window.open(`https://123.hp.com`, '_blank');
+            }
+        }
+
+        // Chat Toggle
+        const chatBubble = document.getElementById('chat-bubble');
+        const chatWidget = document.getElementById('chat-widget');
+        chatBubble.addEventListener('click', () => {
+            chatWidget.classList.toggle('hidden');
+        });
+
+        // Form Submission
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you! We’ll contact you within 15 minutes.');
+            this.reset();
+        });
+    </script>
+
+    <!-- Analytics (Optional) -->
+    <script>
+        // Example: Track page views
+        console.log("Landing page loaded");
+    </script>
+</body>
+
+</html>
