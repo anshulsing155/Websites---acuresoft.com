@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Expert HP Printer Setup Services</title>
+  <meta name="description" content="Learn about Expert HP Printer Setup Services. Professional HP printer installation and support team serving customers across the USA since 2015.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1e40af',
+            secondary: '#3b82f6',
+            accent: '#fbbf24',
+            success: '#10b981',
+            danger: '#ef4444',
+            hpblue: '#0096D6',
+            hpgray: '#f8fafc',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.6s ease-in-out',
+            'slide-up': 'slideUp 0.8s ease-out',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            slideUp: {
+              '0%': { opacity: '0', transform: 'translateY(40px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Inter Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <style>
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .card-hover:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</head>
+
+<body class="font-sans text-gray-800 bg-gray-50 antialiased">
+  <!-- Header -->
+  <header class="fixed top-0 w-full bg-white/95 backdrop-blur-lg shadow-lg z-50 transition-all duration-300">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/>
+            <circle cx="6" cy="14" r="1"/>
+            <path d="M6 18v4h12v-4"/>
+          </svg>
+        </div>
+        <div>
+          <h1 class="text-xl font-bold text-gray-900">Expert HP Setup</h1>
+          <p class="text-xs text-gray-500 font-medium">🇺🇸 USA Nationwide Support</p>
+        </div>
+      </div>
+
+      <nav class="hidden lg:flex space-x-8 items-center">
+        <a href="index2.html" class="text-gray-700 hover:text-primary font-medium transition-colors duration-200">Home</a>
+        <a href="about.html" class="text-primary font-medium">About</a>
+        <a href="contact.html" class="text-gray-700 hover:text-primary font-medium transition-colors duration-200">Contact</a>
+        <a href="tel:18005551234" class="bg-gradient-to-r from-primary to-secondary text-white px-6 py-2.5 rounded-xl font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200">
+          Call Now
+        </a>
+      </nav>
+
+      <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </header>  <!--
+ Mobile Menu -->
+  <div id="mobile-menu" class="hidden lg:hidden bg-white/95 backdrop-blur-lg border-t border-gray-200">
+    <div class="px-4 py-2 space-y-1">
+      <a href="index2.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Home</a>
+      <a href="about.html" class="block px-4 py-3 text-primary bg-blue-50 rounded-lg">About</a>
+      <a href="contact.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">Contact</a>
+      <a href="tel:18005551234" class="block mx-4 my-3 px-4 py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-lg text-center">Call Now</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="pt-24 pb-16 bg-gradient-to-br from-primary to-secondary text-white relative overflow-hidden">
+    <div class="absolute inset-0 bg-black opacity-10"></div>
+    <div class="container mx-auto px-4 text-center relative z-10">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-slide-up">About Expert HP Setup</h1>
+        <p class="text-xl md:text-2xl opacity-90 mb-8 animate-fade-in">Your trusted partner for HP printer setup and support across the USA</p>
+        <div class="flex justify-center items-center space-x-8 text-sm md:text-base animate-fade-in">
+          <div class="text-center">
+            <div class="text-2xl font-bold text-accent">10K+</div>
+            <div class="opacity-90">Happy Customers</div>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl font-bold text-accent">10</div>
+            <div class="opacity-90">Years Experience</div>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl font-bold text-accent">98%</div>
+            <div class="opacity-90">Success Rate</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+              Founded in 2015, Expert HP Printer Setup Services was born from a simple observation: too many people were struggling with HP printer installations and getting frustrated with complex setup processes.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+              Our founder, a former HP technician with over 15 years of experience, recognized the need for specialized, USA-based support that could provide quick, reliable solutions for HP printer users across the country.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed mb-8">
+              Today, we've helped over 10,000 customers get their HP printers working perfectly, from home users to large businesses, with our combination of free tools and expert support services.
+            </p>
+            <div class="flex items-center space-x-4">
+              <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-900">Certified HP Partners</h3>
+                <p class="text-gray-600">Official HP certification and training</p>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl p-8 card-hover">
+              <div class="text-center">
+                <div class="w-24 h-24 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">Expert Team</h3>
+                <p class="text-gray-700 leading-relaxed">
+                  Our team consists of certified HP technicians with an average of 8+ years experience in printer setup and troubleshooting.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Mission -->
+  <section class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl font-bold text-gray-900 mb-8">Our Mission</h2>
+        <p class="text-xl text-gray-700 leading-relaxed mb-12">
+          To make HP printer setup simple, fast, and stress-free for everyone across the United States, while providing exceptional customer service and support.
+        </p>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+            <div class="w-16 h-16 bg-gradient-to-br from-success to-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-4">Speed</h3>
+            <p class="text-gray-700">Get your HP printer working in minutes, not hours. Our efficient processes ensure quick resolution.</p>
+          </div>
+          
+          <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+            <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-4">Quality</h3>
+            <p class="text-gray-700">Professional service with 100% satisfaction guarantee. We don't stop until your printer works perfectly.</p>
+          </div>
+          
+          <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+            <div class="w-16 h-16 bg-gradient-to-br from-accent to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-4">Care</h3>
+            <p class="text-gray-700">Friendly, patient support from real people who understand your frustration and are here to help.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-gray-900 text-center mb-16">Why Choose Expert HP Setup?</h2>
+        
+        <div class="grid lg:grid-cols-2 gap-12">
+          <div class="space-y-8">
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 bg-primary text-white rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">USA-Based Support</h3>
+                <p class="text-gray-700">All our technicians are located in the United States, ensuring clear communication and understanding of local needs.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 bg-success text-white rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">24/7 Availability</h3>
+                <p class="text-gray-700">Get help when you need it most. Our support team is available around the clock to assist with urgent printer issues.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 bg-accent text-white rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">HP Certified</h3>
+                <p class="text-gray-700">Our technicians are officially certified by HP, ensuring they have the latest knowledge and training on all HP printer models.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-4">
+              <div class="w-12 h-12 bg-secondary text-white rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Transparent Pricing</h3>
+                <p class="text-gray-700">No hidden fees or surprise charges. Our pricing is clear and upfront, with many free resources available.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Our Guarantee</h3>
+            <div class="space-y-6">
+              <div class="flex items-center space-x-4">
+                <div class="w-8 h-8 bg-success text-white rounded-full flex items-center justify-center">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <span class="text-gray-700">100% satisfaction guarantee</span>
+              </div>
+              <div class="flex items-center space-x-4">
+                <div class="w-8 h-8 bg-success text-white rounded-full flex items-center justify-center">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <span class="text-gray-700">Money-back if we can't fix it</span>
+              </div>
+              <div class="flex items-center space-x-4">
+                <div class="w-8 h-8 bg-success text-white rounded-full flex items-center justify-center">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <span class="text-gray-700">Same-day service available</span>
+              </div>
+              <div class="flex items-center space-x-4">
+                <div class="w-8 h-8 bg-success text-white rounded-full flex items-center justify-center">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <span class="text-gray-700">Free follow-up support</span>
+              </div>
+            </div>
+            <div class="mt-8 text-center">
+              <a href="contact.html" class="bg-gradient-to-r from-primary to-secondary text-white px-8 py-4 rounded-xl font-bold hover:shadow-lg transform hover:scale-105 transition-all duration-200 inline-block">
+                Get Started Today
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-gray-900 text-center mb-16">Meet Our Expert Team</h2>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-2xl p-8 text-center shadow-lg card-hover">
+            <div class="w-24 h-24 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+              <span class="text-2xl font-bold text-white">JD</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">John Davis</h3>
+            <p class="text-primary font-semibold mb-4">Founder & Lead Technician</p>
+            <p class="text-gray-700 text-sm leading-relaxed">
+              Former HP technician with 15+ years experience. Specializes in complex network printer setups and enterprise solutions.
+            </p>
+          </div>
+          
+          <div class="bg-white rounded-2xl p-8 text-center shadow-lg card-hover">
+            <div class="w-24 h-24 bg-gradient-to-br from-success to-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <span class="text-2xl font-bold text-white">SM</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Sarah Martinez</h3>
+            <p class="text-success font-semibold mb-4">Senior Support Specialist</p>
+            <p class="text-gray-700 text-sm leading-relaxed">
+              Customer service expert with 10+ years helping customers. Known for patience and clear explanations of technical concepts.
+            </p>
+          </div>
+          
+          <div class="bg-white rounded-2xl p-8 text-center shadow-lg card-hover">
+            <div class="w-24 h-24 bg-gradient-to-br from-accent to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <span class="text-2xl font-bold text-white">MJ</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Mike Johnson</h3>
+            <p class="text-accent font-semibold mb-4">Technical Support Lead</p>
+            <p class="text-gray-700 text-sm leading-relaxed">
+              Wireless connectivity specialist with expertise in troubleshooting complex network and driver issues across all HP models.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-gradient-to-r from-primary to-secondary text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">Ready to Experience Expert HP Setup?</h2>
+      <p class="text-xl opacity-90 mb-8">Join thousands of satisfied customers who trust us with their HP printer needs</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="index2.html#downloads" class="bg-white text-primary px-8 py-4 rounded-xl font-bold hover:bg-gray-100 transition-colors">
+          Try Free Tools
+        </a>
+        <a href="contact.html" class="border-2 border-white text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-primary transition-colors">
+          Get Expert Help
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-3 mb-4">
+            <div class="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/>
+                <circle cx="6" cy="14" r="1"/>
+                <path d="M6 18v4h12v-4"/>
+              </svg>
+            </div>
+            <span class="text-xl font-bold">Expert HP Setup</span>
+          </div>
+          <p class="text-gray-400">Professional HP printer setup services across the USA since 2015.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Services</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="index2.html#services" class="hover:text-white transition-colors">Basic Setup</a></li>
+            <li><a href="index2.html#services" class="hover:text-white transition-colors">Full Installation</a></li>
+            <li><a href="index2.html#services" class="hover:text-white transition-colors">Troubleshooting</a></li>
+            <li><a href="index2.html#services" class="hover:text-white transition-colors">Premium Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Company</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+            <li><a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+            <li><a href="terms.html" class="hover:text-white transition-colors">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Contact</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li>📞 1-800-HP-SETUP</li>
+            <li>✉️ support@experthpsetup.com</li>
+            <li>🕒 Mon-Fri: 8AM-8PM EST</li>
+            <li>🇺🇸 USA Nationwide</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 Expert HP Printer Setup Services. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile Menu Toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    let isMenuOpen = false;
+
+    mobileBtn.addEventListener('click', () => {
+      isMenuOpen = !isMenuOpen;
+      mobileMenu.classList.toggle('hidden');
+      
+      if (isMenuOpen) {
+        mobileBtn.innerHTML = `
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        `;
+      } else {
+        mobileBtn.innerHTML = `
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        `;
+      }
+    });
+
+    // Intersection Observer for animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fade-in');
+        }
+      });
+    }, observerOptions);
+
+    // Observe elements for animation
+    document.addEventListener('DOMContentLoaded', () => {
+      const animateElements = document.querySelectorAll('.card-hover');
+      animateElements.forEach(el => observer.observe(el));
+    });
+  </script>
+</body>
+</html>
